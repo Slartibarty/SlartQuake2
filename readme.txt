@@ -1,3 +1,19 @@
+================================================================
+
+This code should compile fine (albeit with many trivial warnings) under
+Visual Studio 2017 in 64 or 32-bit.
+
+I haven't tested the makefiles, this codebase is based on the original 2001
+3.21 version of the source code (which is newer than the 3.19 release available on
+Id's own Github!) so you may need to make some minor changes to compile for anything
+other than Windows.
+
+I've made minimal changes to the code, id386 is no longer defined when targeting
+64-bits, which means 32-bit ASM functions use their Unix equivalents.
+
+Added support for a variety of modern common resolutions.
+
+================================================================
 
 This is the complete source code for Quake 2, version 3.21, buildable with
 visual C++ 6.0.  The linux version should be buildable, but we haven't
@@ -25,5 +41,4 @@ Thanks to Robert Duffy for doing the grunt work of building this release.
 
 John Carmack
 Id Software
-
 
